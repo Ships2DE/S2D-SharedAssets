@@ -5,7 +5,7 @@ public class ShipDataShared : Node {
 
 	[Export] public int Id;
 	[Export] public string Classname;
-	[Export] public float Speed, TurnSpeed, ReverseMulti;
+	[Export] public float Speed, TurnSpeed, ReverseMulti, AccelerationMulti, StandTurnSpeed, SpeedTurnInfluence;
 	
 
 }
