@@ -24,17 +24,19 @@ shader_param/SkinOffset = Vector3( 0, 0, 0 )
 script = ExtResource( 11 )
 Id = 1
 Classname = "pt109"
-Speed = 150000.0
-TurnSpeed = 400.0
+Speed = 125000.0
+TurnSpeed = 1000.0
 ReverseMulti = 0.5
 AccelerationMulti = 0.5
-StandTurnSpeed = 20.0
-SpeedTurnInfluence = 0.5
+StandTurnSpeed = 10.0
+SpeedTurnInfluence = 5.0
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2( 1, 0 )
 mass = 56.0
 continuous_cd = 1
+contacts_reported = 2
+contact_monitor = true
 
 [node name="Collider_Hull" type="CollisionPolygon2D" parent="RigidBody2D"]
 polygon = PoolVector2Array( -4, -49, 77, -49, 145, -36, 187, -1, 146, 35, 79, 47, -1, 48, -180, 33, -184, 0, -180, -34 )
